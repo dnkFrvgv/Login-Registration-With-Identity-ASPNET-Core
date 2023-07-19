@@ -1,0 +1,18 @@
+@page
+@model authentication.Pages.LogoutModel
+@{
+    ViewData["Title"] = "Logout";
+}
+
+<h1>@ViewData["Title"]</h1> 
+
+<form method="post">
+    <div class="card text-center">
+        <div class="card-body">
+            <p class="card-text">Tem certeza que quer sair?</p>
+            <button asp-page-handler="Leave" type="submit" class="btn btn-success mb-1">Sim</button>
+            <button asp-page-handler="Stay" type="submit" class="btn btn-success mb-1">Não</button>
+
+        </div>
+    </div>
+</form>
